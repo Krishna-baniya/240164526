@@ -1,0 +1,540 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/dell/ontologies/2024/11/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/dell/ontologies/2024/11/untitled-ontology-3">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#CodeRefactoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conditional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DebuggingTechniques"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ErrorIdentification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ErrorTypes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LogicalError"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Loop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PythonConstructs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Python_Debugging_ontology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RuntimeError"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SyntaxError"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnitTesting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Variable"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cousedBY"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasError"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresDebugging"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#errorMessage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLineNumber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CalculateAdd"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Incorrect_Error_Type_Identification"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Misleading_Error_Message"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Missing_Assertion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Missing_colon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Test_Not_Running"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UnexpectedIndent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#boolean_logic_error"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fetchuserdata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#forLoop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#for_Loop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#identation_error"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#long_function"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#myFunction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nameErrorExample"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#name_of_error"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nested_loop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#price"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#repeated_code"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#variableName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#while_Loop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#input_=10"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#CodeRefactoring"/>
+        <Class IRI="#DebuggingTechniques"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conditional"/>
+        <Class IRI="#PythonConstructs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DebuggingTechniques"/>
+        <Class IRI="#Python_Debugging_ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ErrorIdentification"/>
+        <Class IRI="#DebuggingTechniques"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ErrorTypes"/>
+        <Class IRI="#Python_Debugging_ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function"/>
+        <Class IRI="#PythonConstructs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LogicalError"/>
+        <Class IRI="#ErrorTypes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Loop"/>
+        <Class IRI="#PythonConstructs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PythonConstructs"/>
+        <Class IRI="#Python_Debugging_ontology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RuntimeError"/>
+        <Class IRI="#ErrorTypes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SyntaxError"/>
+        <Class IRI="#ErrorTypes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnitTesting"/>
+        <Class IRI="#DebuggingTechniques"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Variable"/>
+        <Class IRI="#PythonConstructs"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#CalculateAdd"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ErrorIdentification"/>
+        <NamedIndividual IRI="#Incorrect_Error_Type_Identification"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ErrorIdentification"/>
+        <NamedIndividual IRI="#Misleading_Error_Message"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitTesting"/>
+        <NamedIndividual IRI="#Missing_Assertion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SyntaxError"/>
+        <NamedIndividual IRI="#Missing_colon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UnitTesting"/>
+        <NamedIndividual IRI="#Test_Not_Running"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SyntaxError"/>
+        <NamedIndividual IRI="#UnexpectedIndent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RuntimeError"/>
+        <NamedIndividual IRI="#boolean_logic_error"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#fetchuserdata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Loop"/>
+        <NamedIndividual IRI="#for_Loop"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SyntaxError"/>
+        <NamedIndividual IRI="#identation_error"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CodeRefactoring"/>
+        <NamedIndividual IRI="#long_function"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Function"/>
+        <NamedIndividual IRI="#myFunction"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RuntimeError"/>
+        <NamedIndividual IRI="#nameErrorExample"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LogicalError"/>
+        <NamedIndividual IRI="#name_of_error"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Loop"/>
+        <NamedIndividual IRI="#nested_loop"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Variable"/>
+        <NamedIndividual IRI="#price"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CodeRefactoring"/>
+        <NamedIndividual IRI="#repeated_code"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Variable"/>
+        <NamedIndividual IRI="#variableName"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Loop"/>
+        <NamedIndividual IRI="#while_Loop"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Conditional"/>
+        <NamedIndividual IRI="#input_=10"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#CalculateAdd"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">Typemismatch</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#CalculateAdd"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#Incorrect_Error_Type_Identification"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">The error type identified does not match the actual issue in the code.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#Incorrect_Error_Type_Identification"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#Misleading_Error_Message"/>
+        <Literal>The user is misled by the error message into believing that the problem is not related to the underlying cause.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#Misleading_Error_Message"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#Missing_Assertion"/>
+        <Literal>A unit test is written but lacks any assertion to check the output of the tested function.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#Missing_Assertion"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#Missing_colon"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">there is missing code</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#Missing_colon"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#Test_Not_Running"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#Test_Not_Running"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">Due to improper naming (the &apos;test_&apos; prefix is absent), the test method is not performed.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#UnexpectedIndent"/>
+        <Literal>UnexpectedIndent</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#UnexpectedIndent"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#boolean_logic_error"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">boolian logic error</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#boolean_logic_error"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#fetchuserdata"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">MissingReturn</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#fetchuserdata"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#forLoop"/>
+        <Literal>infinite loop</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#forLoop"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#for_Loop"/>
+        <Literal>Infinite loop</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#for_Loop"/>
+        <Literal>Infinite Loop
+16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#identation_error"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">there is identattion error</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#identation_error"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#long_function"/>
+        <Literal>it is long function</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#long_function"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#myFunction"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">Missing return</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#myFunction"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#nameErrorExample"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">An error has occurred: &quot;name &apos;x&apos; is not defined.&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#nameErrorExample"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#name_of_error"/>
+        <Literal>infiniteloop</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#name_of_error"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#nested_loop"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">performance error</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#nested_loop"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#price"/>
+        <Literal>overflowError</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#price"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#repeated_code"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">there is no access valid , repeated code</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#repeated_code"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#variableName"/>
+        <Literal>Nameerror</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#variableName"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#while_Loop"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">Infinite loop</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#while_Loop"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#errorMessage"/>
+        <NamedIndividual IRI="#input_=10"/>
+        <Literal>missingcolon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLineNumber"/>
+        <NamedIndividual IRI="#input_=10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cousedBY"/>
+        <Class IRI="#ErrorTypes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasError"/>
+        <Class IRI="#PythonConstructs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requiresDebugging"/>
+        <Class IRI="#ErrorTypes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cousedBY"/>
+        <Class IRI="#PythonConstructs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasError"/>
+        <Class IRI="#ErrorTypes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiresDebugging"/>
+        <Class IRI="#DebuggingTechniques"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#errorMessage"/>
+        <Class IRI="#ErrorTypes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLineNumber"/>
+        <Class IRI="#ErrorTypes"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#errorMessage"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLineNumber"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
